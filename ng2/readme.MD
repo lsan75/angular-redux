@@ -1,1 +1,1 @@
-Toy Store
+Redux for Angular 2

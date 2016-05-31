@@ -1,1 +1,1 @@
-=== Component Manager ===
+Redux for Angular 1
