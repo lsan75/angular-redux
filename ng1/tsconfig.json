@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "removeComments": false
+  },
+  "files": [
+    "index.ts",
+    "typings/**/*.ts",
+    "www/js/**/*.ts"
+  ]
+}

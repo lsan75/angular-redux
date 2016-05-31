@@ -1,0 +1,64 @@
+html, body {
+  background: @white;
+  color: @black;
+  font-size: 16px;
+  margin: 0;
+}
+
+main-container {
+  text-align: center;
+}
+
+section {
+  border: 1px solid @grey;
+  border-radius: 0.5em;
+  margin: 2em auto 0;
+  padding: 1em;
+  width: 300px;
+}
+
+article {
+  margin: 0 0 2em;
+  -webkit-user-select :none;
+}
+
+.mdi {
+  cursor: pointer;
+  font-size: 2em;
+  padding: 0 0.3em;
+  vertical-align: middle;
+}
+
+.mdi-factory {
+  color: @green;
+  cursor: default;
+  font-size: 5em;
+  padding: 0;
+}
+
+.mdi-plus-circle,
+.mdi-minus-circle,
+.mdi-play-circle,
+.mdi-stop-circle {
+  position: relative;
+  top: 0.4em;
+}
+
+.mdi-memory {
+  font-size: 3em;
+  margin: 0 0 1em;
+  -webkit-transition: color ease-out 500ms;
+}
+
+@-webkit-keyframes rotating {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
+.running {
+  color: @red;
+  -webkit-animation: rotating 6s linear infinite;
+}

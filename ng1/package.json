@@ -1,0 +1,51 @@
+{
+  "name": "ComponentManager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.5.x",
+    "angular-sanitize": "^1.5.x",
+    "es6-shim": "^0.35.0",
+    "mdi": "^1.4.57",
+    "ng-redux": "^3.3.x",
+    "redux": "^3.3.1",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.0.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0",
+    "angular-module-mocks": "^1.2.19",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.9.0",
+    "istanbul": "^0.4.2",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.3",
+    "karma-jasmine": "^0.3.7",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.24",
+    "karma-webpack": "^1.7.0",
+    "less": "^2.6.0",
+    "less-loader": "^2.2.2",
+    "ng-cache-loader": "0.0.15",
+    "rimraf": "^2.5.2",
+    "style-loader": "^0.13.0",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.13",
+    "webpack-typescript": "^0.5.6"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "deploy": "npm run cleandist && npm run webpack",
+    "dev": "webpack-dev-server --progress --content-base www/ --colors --port 9000 --watch",
+    "webpack": "webpack -p --config webpack.production.config.js",
+    "cleandist": "rimraf dist/",
+    "test": "karma start"
+  },
+  "author": "ls",
+  "license": "ISC"
+}
